@@ -1,10 +1,13 @@
 import React from "react"
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-export default function Contact() {
+export default function Contact(props) {
+    const {navigation} = props;
+
     return(
         <View>
             <Text style={styles.contact}>ESTAMOS EN CONTACT</Text>
+            <Button title="About" onPress={() => navigation.navigate('about')} />
         </View>
     )
 }

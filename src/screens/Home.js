@@ -9,6 +9,7 @@ export default function Home(props) {
             <Text style={styles.home}>ESTAMOS EN LA HOME</Text>
             <Button title="Ir About" onPress={() => navigation.navigate('about')} />
             <Button title="Ir a Contact" onPress={() => navigation.navigate('contact')} />
+            <Button title="Ir a Cursos" onPress={() => navigation.navigate('contact', {screen:'courses'})} />
         </View>
     )
 }
